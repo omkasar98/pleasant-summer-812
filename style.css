@@ -1,0 +1,697 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 130px;
+    width: 100%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+
+}
+
+.link {
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+
+
+}
+
+.link a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(51, 142, 234);
+    justify-content: center;
+    font-size: 14px;
+}
+
+.link span {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(51, 142, 234);
+    margin-left: 10px;
+}
+
+.signIn {
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    height: 40px;
+    box-sizing: border-box;
+
+}
+
+.signIn ul {
+    float: right;
+
+}
+
+.signIn ul li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 40px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.signIn ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    width: 90%;
+    height: 100%;
+    border-bottom: 0px solid rgb(255, 255, 255);
+    transition: 100ms;
+}
+
+.signIn ul li:hover:before {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.signIn ul li span {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.navBar {
+    height: 60px;
+    background-color: black;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    height: 40px;
+    width: 200px;
+    padding-top: 8px;
+}
+
+.logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.navList ul {
+    padding-left: 100px;
+   
+}
+
+.navList ul li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 40px;
+    color: white;
+    line-height: 60px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10 ;
+
+}
+
+.navList ul li::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 0%;
+    background-color: rgb(98, 98, 98);
+    z-index: -11 ;
+    transition: 200ms;
+
+}
+.navList ul li:hover:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 80%;
+    background-color: rgb(98, 98, 98);
+    z-index: -11 ;
+    transition: 200ms;
+}
+
+.searchBar {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /* border: 1px solid rgb(23, 95, 159); */
+    padding-top: 8px;
+}
+.searchBar .search{
+    width: 220px;
+    height: 40px;
+    /* border: 1px solid rgb(159, 23, 23); */
+    position: relative;
+    margin-right: 5px;
+    outline: none;
+    
+}
+.searchBar .search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.searchBar .search .material-symbols-outlined{
+    position: absolute;
+    right: 10px;
+    color: gray;
+    line-height: 40px;
+    cursor: pointer;
+    
+}
+.searchBar .icon{
+    line-height: 40px;
+    padding: 0 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.dropDown{
+    width: 100%;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 20;
+    box-sizing: border-box;
+    transition: 300ms ease-in;
+    overflow: hidden;
+}
+.dropDown span{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.offerBox{
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   padding: 10px 10px;
+   box-sizing: border-box;
+}
+.offerBox div{
+    width: 50%;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 10px;
+    background-color: rgba(238, 238, 238, 0.553);
+    
+}
+.offerBox h2{
+    font-weight: 400;
+    font-size: 15px;
+}
+.offerBox div a{
+    color: rgb(61, 61, 61);
+    padding-left: 10px;
+}
+.offerBox span{
+    padding: 0 8px;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    background-color: #f3af22;
+    
+}
+.banner div{
+    width: 50%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+
+}
+.banner .bannerText{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 40px;
+}
+.bannerText h2{
+
+    text-transform: capitalize;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+.bannerText p{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.bannerText button{
+    width: 250px;
+    text-transform: uppercase;
+    background: #000;
+    color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    font-weight: 500;
+
+
+}
+.bannerText button span{
+    font-size: 20px;
+
+}
+.bannerImg img{
+    width: 100%;
+}
+.catogory{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+.catogory div{
+    width: 16.66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top:20px;
+    text-transform: uppercase;
+    
+}
+.catBox img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.catBox a{
+    color: black;
+}
+.brand{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+.brand div{
+    width: 16.66%;
+    padding: 10px;
+}
+.b1 img{
+    width: 100%;
+}
+
+.adverties{
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.adverties div{
+    width: 33.33%;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.adverties .addBox img{
+    width: 100%;
+}
+.adverties .addBox h2{
+    text-align: center;
+    margin-top: 30px;
+   /* border: 1px solid black; */
+    font-size: 40px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
+.addBox a{
+    text-align: center;
+    justify-content: center;
+    padding-left: 165px;
+    
+}
+.new-arrivals{
+    /* border:1px black solid; */
+    display: flex;
+    flex-direction: column;
+}
+.arrival-heading{
+    text-align: center;
+    height: 100px;
+    /* border: 1px solid black; */
+   
+    
+}
+.arrival-heading h2{
+    margin-top: 25px;
+    font-size: 40px;
+}
+.catlogbox{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+.catlogbox div{
+    width: 16.66%;
+    /* border: 1px solid black; */
+}
+.catlogbox .catlog img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.catlogbox .catlog a{
+    padding: 58px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.banner1{
+    width: 100%;
+    /* height: 700px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    background-color: #0242db;
+    position: relative;
+
+    
+}
+.banner1 img{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    z-index: 1;
+
+}
+.banner1 .bannerText1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 40px;
+}
+.bannerText1 h2{
+
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: white;
+}
+.bannerText1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+.bannerText1 p{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: white;
+}
+.bannerText1 button{
+    width: 250px;
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    font-weight: 500;
+
+
+}
+.bannerText1 button span{
+    font-size: 20px;
+
+}
+.bannerImg1 img{
+    width: 100%;
+    height: 100%;
+   
+}
+.shopMore{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.shopMore div{
+    width: 33.33%;
+
+}
+.shopBox{
+    text-align: center;
+    padding: 10px;
+}
+.shopBox img{
+    width: 100% ;
+    margin-bottom: 15px;
+}
+.shopBox h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.shopBox p{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.shopBox a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    transition: 100ms ease;
+}
+.shopBox a:hover{
+    border-bottom: 3px solid black;
+}
+.footer{
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 20px 45px;
+    position: relative;
+}
+.footer div{
+    width: 25%;
+    padding: 10px;
+}
+
+.fbox h2{
+    font-size: 21px;
+    margin-bottom: 15px;
+    
+}
+.fbox p{
+    margin-bottom: 40px;
+}
+.fbox button{
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.red{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+.red::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 5px;
+    width: 20px;
+    background: rgb(218, 0, 0);
+
+}
+.fbox ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.footer img{
+    position: absolute;
+    left: 20px;
+    bottom: 45px;
+    width: 200px;
+    height: auto;
+}
+
+.signIn_model{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.635);
+    z-index: 20;
+    display: none;
+    
+}
+.overlay{
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid black; */
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.overlay h2{
+    background: #ebebeb;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 -20px;
+    margin-bottom: 30px;
+    
+}
+.overlay input{
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    background: #f7f7f7;
+    
+}
+.overlay input::placeholder{
+    color: black;
+}
+.overlay a{
+    margin: 0 10px;
+    text-transform: capitalize;
+    color: #3a75ff;
+    margin-bottom: 40px;
+}
+.overlay div{
+    display: flex;
+    flex-direction: row;
+}
+.overlay div button{
+    width: 50%;
+    padding: 10px 13px;
+    margin: 0 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 0px solid black;
+    
+}
+.overlay div button:hover{
+    border-bottom: 2px solid black;
+}
+.overlay span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.overlay div button:first-child{
+    background: none;
+    border: 2px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.overlay div button:last-child{
+    background: black;
+    border: 1px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.menslist{
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: row;
+}
+.menslist div{
+    width: 16.66%;
+    /* border: 1px solid black; */
+    padding: 0 30px;
+}
+.list h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.list ul li{
+    margin-bottom: 15px;
+    list-style: none;
+}
